@@ -184,14 +184,22 @@ function TrainerProfilePage() {
               Ask about available times, session location, and the best package for
               your goal.
             </p>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex w-full justify-center rounded-lg bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-            >
-              Book on WhatsApp
-            </a>
+            <div className="mt-6 grid gap-3">
+              <Link
+                to={`/trainers/${trainer.id}/book`}
+                className="inline-flex w-full justify-center rounded-lg bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+              >
+                Book Session
+              </Link>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex w-full justify-center rounded-lg border border-emerald-200 bg-emerald-50 px-5 py-3 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-100"
+              >
+                Quick contact on WhatsApp
+              </a>
+            </div>
           </aside>
         </section>
       </main>
