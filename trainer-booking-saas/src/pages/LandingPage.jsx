@@ -65,7 +65,7 @@ function LandingPage() {
         <TrainerGrid trainers={filteredTrainers} />
         <FeatureStrip />
         <section className="bg-white" id="join">
-          <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <div className="mx-auto flex max-w-6xl flex-col gap-5 px-4 py-12 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:py-14">
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-slate-950">
                 Are you a trainer in Lebanon?

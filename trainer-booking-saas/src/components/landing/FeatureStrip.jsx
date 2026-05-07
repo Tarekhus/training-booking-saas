@@ -7,7 +7,7 @@ function FeatureStrip() {
 
   return (
     <section className="bg-slate-950" id="features">
-      <div className="mx-auto grid max-w-6xl gap-3 px-4 py-6 sm:grid-cols-3 sm:px-6">
+      <div className="mx-auto grid max-w-6xl gap-3 px-4 py-8 sm:grid-cols-3 sm:px-6 lg:py-9">
         {features.map((feature) => (
           <div
             key={feature}

@@ -7,8 +7,15 @@ function SearchSection({
 }) {
   return (
     <section className="border-y border-slate-200 bg-white" id="trainers">
-      <div className="mx-auto max-w-6xl px-4 py-5 sm:px-6">
-        <div className="grid gap-3 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
+        <div className="rounded-xl border border-slate-200 bg-slate-50 p-3 sm:p-4">
+          <div className="mb-3 flex items-center justify-between gap-3">
+            <h2 className="text-base font-bold text-slate-950">Search trainers</h2>
+            <p className="hidden text-sm text-slate-500 sm:block">
+              Filter by what matters first.
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr]">
           <label className="block">
             <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">
               Search
@@ -75,6 +82,7 @@ function SearchSection({
               ))}
             </select>
           </label>
+          </div>
         </div>
       </div>
     </section>

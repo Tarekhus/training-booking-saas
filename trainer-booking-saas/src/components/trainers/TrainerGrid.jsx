@@ -3,8 +3,8 @@ import TrainerCard from './TrainerCard'
 function TrainerGrid({ trainers }) {
   return (
     <section className="bg-slate-50">
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-14">
+        <div className="mb-7 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-2xl font-bold tracking-tight text-slate-950">
               Available trainers
@@ -17,7 +17,7 @@ function TrainerGrid({ trainers }) {
         </div>
 
         {trainers.length > 0 ? (
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {trainers.map((trainer) => (
               <TrainerCard key={trainer.id} trainer={trainer} />
             ))}
