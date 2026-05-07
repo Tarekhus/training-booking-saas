@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function TrainerCard({ trainer }) {
   const [imageFailed, setImageFailed] = useState(false)
@@ -68,9 +69,12 @@ function TrainerCard({ trainer }) {
         </div>
 
         <div className="mt-auto grid grid-cols-1 gap-3 sm:grid-cols-2">
-          <button className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-slate-950 hover:text-slate-950">
+          <Link
+            to={`/trainers/${trainer.id}`}
+            className="rounded-lg border border-slate-300 px-4 py-2 text-center text-sm font-semibold text-slate-800 transition hover:border-slate-950 hover:text-slate-950"
+          >
             View Profile
-          </button>
+          </Link>
           <a
             href={whatsappUrl}
             target="_blank"
